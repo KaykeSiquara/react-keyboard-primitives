@@ -1,0 +1,42 @@
+{
+  "name": "@kaykesiquara/react-keyboard-primitives",
+  "version": "1.0.0",
+  "description": "Headless React primitives whose keyboard behaviour is the product. A combobox that never moves focus off the input, and a dialog with a focus trap written by hand. No runtime dependencies.",
+  "keywords": ["react","accessibility","a11y","combobox","dialog","focus-trap","headless","keyboard","wai-aria","typescript"],
+  "license": "MIT",
+  "author": "Kayke Siquara Mendonça",
+  "repository": { "type": "git", "url": "git+https://github.com/KaykeSiquara/react-keyboard-primitives.git" },
+  "publishConfig": { "access": "public" },
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "sideEffects": false,
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.0",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "jsdom": "^25.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
