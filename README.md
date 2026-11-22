@@ -12,8 +12,11 @@ here with the tests that say so.
 ## Install
 
 ```sh
-npm install @kaykesiquara/react-keyboard-primitives
+npm install github:KaykeSiquara/react-keyboard-primitives
 ```
+
+Not on the npm registry yet: this installs straight from GitHub and builds on
+install. Imports stay `@kaykesiquara/react-keyboard-primitives`.
 
 React 18 or 19, as a peer dependency. Node 20 or newer to build from source.
 
