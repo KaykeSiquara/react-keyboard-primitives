@@ -18,7 +18,7 @@ npm install github:KaykeSiquara/react-keyboard-primitives
 Not on the npm registry yet: this installs straight from GitHub and builds on
 install. Imports stay `@kaykesiquara/react-keyboard-primitives`.
 
-React 18 or 19, as a peer dependency. Node 20 or newer to build from source.
+React 18 or 19, as a peer dependency. Node 20 or newer to build from source, and 22 or newer to run the tests.
 
 ## Combobox
 
@@ -163,7 +163,7 @@ npm run typecheck
 npm run build
 ```
 
-CI runs the suite on Node 20, 22 and 24, and once more against React 19.
+CI runs the suite on Node 22 and 24, and once more against React 19.
 
 ## Licence
 

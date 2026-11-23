@@ -2,18 +2,45 @@
   "name": "@kaykesiquara/react-keyboard-primitives",
   "version": "1.0.0",
   "description": "Headless React primitives whose keyboard behaviour is the product. A combobox that never moves focus off the input, and a dialog with a focus trap written by hand. No runtime dependencies.",
-  "keywords": ["react","accessibility","a11y","combobox","dialog","focus-trap","headless","keyboard","wai-aria","typescript"],
+  "keywords": [
+    "react",
+    "accessibility",
+    "a11y",
+    "combobox",
+    "dialog",
+    "focus-trap",
+    "headless",
+    "keyboard",
+    "wai-aria",
+    "typescript"
+  ],
   "license": "MIT",
   "author": "Kayke Siquara Mendonça",
-  "repository": { "type": "git", "url": "git+https://github.com/KaykeSiquara/react-keyboard-primitives.git" },
-  "publishConfig": { "access": "public" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaykeSiquara/react-keyboard-primitives.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "sideEffects": false,
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "prepare": "npm run build",
@@ -22,7 +49,6 @@
     "test:watch": "vitest",
     "prepublishOnly": "npm run typecheck && npm test && npm run build"
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
@@ -38,6 +64,6 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "typescript": "^5.6.0",
-    "vitest": "^2.1.0"
+    "vitest": "^5.1.1"
   }
 }
